@@ -21,7 +21,7 @@ function GoogleLogin() {
                     phone : 'Is not Provided',
                 };
 
-                if (user.email && user.displayName) {
+                if (user?.email && user?.displayName) {
                     return axios.post('https://smart-class-hub.onrender.com/new-user', userImp)
                         .then(() => {
                             navigate('/');
