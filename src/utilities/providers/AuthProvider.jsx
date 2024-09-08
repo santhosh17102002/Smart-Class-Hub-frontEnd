@@ -102,6 +102,7 @@ function AuthProvider({children}) {
             setLoader(false);
           }
         });
+        
       
         return () => unsubscribe();
       }, [auth]);
