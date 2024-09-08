@@ -7,8 +7,9 @@ function GoogleLogin() {
     const {googleLogin} = useAuth()
     const navigate = useNavigate();
     const handleLogin = () => {
+        
         googleLogin().then((userCredential) => {
-            const user = userCredential.user;
+            const user = userCredential?.user;
             //console.log(user)
             if (user) {
                 const userImp = {
